@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.zycojamie.letterdemo.MainActivity">
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_text_view"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:id="@+id/tv_text"/>
+
+    <com.android.zycojamie.letterdemo.LetterSideView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="25sp"
+        app:no_touch_letter_color="@color/colorPrimary"
+        app:touch_letter_color="@color/colorAccent"
+        android:id="@+id/letter_side_bar"/>
+</RelativeLayout>
